@@ -1,0 +1,31 @@
+<!-- <h1>Assignment 1 Components</h1>
+<app-warning-alert></app-warning-alert>
+<app-success-alert></app-success-alert>
+<app-christopher></app-christopher>
+<hr>
+<h1>Assignment 2 Data binding</h1>
+<input type="text" [(ngModel)]="userName" />
+
+<p>{{ userName }}</p>
+
+<button [disabled]="!userName" (click)="onChangeName()">Reset User</button> -->
+<hr />
+<h1>Assignment 3 Directives</h1>
+
+<button (click)="onToggleDisplay()">Display Details</button>
+<p *ngIf="displayDetails">Secret password = tuna</p>
+
+<ul *ngFor="let log of logs; let i = index">
+   <li
+   [ngStyle]="{backgroundColor : i >= 4 ? 'blue' : 'transparent'}"
+   [ngClass]="{whiteColor : i >= 4}"
+   >{{log}}</li>
+</ul>
+
+
+<!-- <div
+*ngFor="let number of incrementNumber"
+[ngStyle]="{backgroundColor: number > 5 ? 'blue' : 'transparent'}"
+[ngClass]="{'whiteColor' : number > 5}"
+>{{number}}</div> -->
+<p>Number of button clicks: {{ logs.length }}</p>
