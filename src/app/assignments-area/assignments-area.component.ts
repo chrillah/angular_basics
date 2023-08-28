@@ -23,6 +23,22 @@ export class AssignmentsAreaComponent {
         this.displayDetails = !this.displayDetails;
     }
 
+    // Handling error
+
+    things = [];
+    incrementNumber = 0;
+
+    onAdd(){
+        this.incrementNumber++;
+        this.things.push('There is '+this.incrementNumber + ' thing')
+    }
+
+    onRemove(id:number){
+        this.incrementNumber--;
+        const position = id;
+        this.things.splice(position, 1);
+    }
+
     constructor(){
 
     }

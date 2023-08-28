@@ -9,7 +9,7 @@
 <p>{{ userName }}</p>
 
 <button [disabled]="!userName" (click)="onChangeName()">Reset User</button> -->
-<hr />
+<!-- <hr />
 <h1>Assignment 3 Directives</h1>
 
 <button (click)="onToggleDisplay()">Display Details</button>
@@ -22,10 +22,12 @@
    >{{log}}</li>
 </ul>
 
+<p>Number of button clicks: {{ logs.length }}</p> -->
 
-<!-- <div
-*ngFor="let number of incrementNumber"
-[ngStyle]="{backgroundColor: number > 5 ? 'blue' : 'transparent'}"
-[ngClass]="{'whiteColor' : number > 5}"
->{{number}}</div> -->
-<p>Number of button clicks: {{ logs.length }}</p>
+<h1>Handing Errors</h1>
+<button (click)="onAdd()">Add</button>
+<div>
+    <button
+    *ngFor="let thing of things; let i = index" (click)="onRemove(i)"
+    >{{thing}}</button>
+</div>
