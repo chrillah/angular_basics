@@ -39,6 +39,24 @@ export class AssignmentsAreaComponent {
         this.things.splice(position, 1);
     }
 
+    // Assignment 4
+    oddNumbers: number[] = []
+    evenNumbers: number[] = []
+
+    onIntervalFired(firedNumber: number) {
+        if(firedNumber % 2 === 0){
+            this.evenNumbers.push(firedNumber)
+        } else {
+            this.oddNumbers.push(firedNumber)
+        }
+    }
+
+    message:string= "";
+
+    onReciveMessage(eventData:string){
+        this.message = eventData;
+    }
+
     constructor(){
 
     }

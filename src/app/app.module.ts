@@ -11,6 +11,11 @@ import { ChristopherComponent } from './christopher/christopher.component';
 import { AssignmentsAreaComponent } from './assignments-area/assignments-area.component';
 import { CockpitComponent } from './cockpit/cockpit.component';
 import { ServerElementComponent } from './server-element/server-element.component';
+import { GameControlComponent } from './game-control/game-control.component';
+import { OddComponent } from './odd/odd.component';
+import { EvenComponent } from './even/even.component';
+import { RadioTransmitComponent } from './radio-transmit/radio-transmit.component';
+import { ReciveRadioComponent } from './recive-radio/recive-radio.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +27,12 @@ import { ServerElementComponent } from './server-element/server-element.componen
     ChristopherComponent,
     AssignmentsAreaComponent,
     CockpitComponent,
-    ServerElementComponent
+    ServerElementComponent,
+    GameControlComponent,
+    OddComponent,
+    EvenComponent,
+    RadioTransmitComponent,
+    ReciveRadioComponent
   ],
   imports: [
     BrowserModule,

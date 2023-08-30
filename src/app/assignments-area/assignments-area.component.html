@@ -24,10 +24,20 @@
 
 <p>Number of button clicks: {{ logs.length }}</p> -->
 
-<h1>Handing Errors</h1>
+<!-- <h1>Handing Errors</h1>
 <button (click)="onAdd()">Add</button>
 <div>
     <button
     *ngFor="let thing of things; let i = index" (click)="onRemove(i)"
     >{{thing}}</button>
-</div>
+</div> -->
+
+<!-- <h1>Practicing Property & Event Binding and View Encapsulation</h1>
+<app-game-control (intervalFired)="onIntervalFired($event)"></app-game-control>
+<app-odd *ngFor="let oddNumber of oddNumbers" [number]="oddNumber"></app-odd>
+<app-even *ngFor="let evenNumber of evenNumbers" [number]="evenNumber"></app-even> -->
+
+
+<h1>I have to make it work</h1>
+<app-radio-transmit (radioSignal)="onReciveMessage($event)"></app-radio-transmit>
+<app-recive-radio [message]="message"></app-recive-radio>

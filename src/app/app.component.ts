@@ -2,23 +2,23 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
+//   templateUrl: './app.component.html',
 
   //   BASICS
-  // template: `
-  // <div class="container">
-  //   <div class="row">
-  //     <div class="col-xs-12">
-  //       <h3>Udemy_Course_Basics</h3>
-  //       <hr />
-  //       <app-servers></app-servers>
-  //       <div app-servers></div>
-  //       <div class="app-servers"></div>
-  //       <app-assignments-area></app-assignments-area>
-  //     </div>
-  //   </div>
-  // </div>
-  // `,
+  template: `
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <h3>Udemy_Course_Basics</h3>
+        <hr />
+        <!-- <app-servers></app-servers>
+        <div app-servers></div>
+        <div class="app-servers"></div> -->
+        <app-assignments-area></app-assignments-area>
+      </div>
+    </div>
+  </div>
+  `,
   styleUrls: ['./app.component.css'],
   //   styles: [
   //     `
