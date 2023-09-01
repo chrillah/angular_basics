@@ -16,6 +16,8 @@ import { OddComponent } from './odd/odd.component';
 import { EvenComponent } from './even/even.component';
 import { RadioTransmitComponent } from './radio-transmit/radio-transmit.component';
 import { ReciveRadioComponent } from './recive-radio/recive-radio.component';
+import { BasicHighlightDirective } from './assignments-area/basic-highlight/basic-highligth.directive';
+import { BetterHighlightDirective } from './assignments-area/better-highlight/better-highlight.directive';
 
 @NgModule({
   declarations: [
@@ -32,7 +34,9 @@ import { ReciveRadioComponent } from './recive-radio/recive-radio.component';
     OddComponent,
     EvenComponent,
     RadioTransmitComponent,
-    ReciveRadioComponent
+    ReciveRadioComponent,
+    BasicHighlightDirective,
+    BetterHighlightDirective
   ],
   imports: [
     BrowserModule,

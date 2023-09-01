@@ -57,6 +57,11 @@ export class AssignmentsAreaComponent {
         this.message = eventData;
     }
 
+    numbersDEMO = [1,2,3,4,5];
+    oddNumbersDEMO = [1,3,5];
+    evenNumbersDEMO = [2,4];
+    onlyOdd = false;
+
     constructor(){
 
     }
