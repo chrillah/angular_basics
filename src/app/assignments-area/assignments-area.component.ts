@@ -62,6 +62,8 @@ export class AssignmentsAreaComponent {
     evenNumbersDEMO = [2,4];
     onlyOdd = false;
 
+    value= 5;
+
     constructor(){
 
     }

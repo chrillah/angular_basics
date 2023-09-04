@@ -18,6 +18,7 @@ import { RadioTransmitComponent } from './radio-transmit/radio-transmit.componen
 import { ReciveRadioComponent } from './recive-radio/recive-radio.component';
 import { BasicHighlightDirective } from './assignments-area/basic-highlight/basic-highligth.directive';
 import { BetterHighlightDirective } from './assignments-area/better-highlight/better-highlight.directive';
+import { UnlessDirective } from './unless.directive';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { BetterHighlightDirective } from './assignments-area/better-highlight/be
     RadioTransmitComponent,
     ReciveRadioComponent,
     BasicHighlightDirective,
-    BetterHighlightDirective
+    BetterHighlightDirective,
+    UnlessDirective
   ],
   imports: [
     BrowserModule,
